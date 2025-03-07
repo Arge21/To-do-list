@@ -4,6 +4,8 @@ let list = document.querySelector("ul");
 let taskCounter = document.querySelector("#taskCounter");
 let darkBtn = document.querySelector("#darkMode");
 
+darkBtn.style.cssText = ('float: right; margin-right: 10px;');
+
 
 
 function welcome() {
