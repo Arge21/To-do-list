@@ -1,7 +1,7 @@
 let btn = document.querySelector("#taskBtn");
 let taskInput = document.querySelector("#taskInput");
 let list = document.querySelector("ul");
-let taskCounter = document.querySelector("#taskCounter")
+let taskCounter = document.querySelector("#taskCounter");
 
 
 function run() {
@@ -21,6 +21,8 @@ function run() {
     delBtn.textContent = 'Delete';
     list.appendChild(listItem);
 
+    taskCounter.textContent = 'tasks: ' + list.children.length;
+
     listItem.style.cursor = 'pointer'
     listItem.addEventListener ("click", () => {
         listItem.style.cssText = 'text-decoration-color: green; text-decoration-line: line-through;'
@@ -28,10 +30,12 @@ function run() {
 
     delBtn.addEventListener ("click", () => {
         list.removeChild(listItem)
+        taskCounter.textContent = 'tasks: ' + list.children.length;
+
     });
 
   
-    focus()
+    taskInput.focus()
 };
 
 btn.addEventListener('click', run);
