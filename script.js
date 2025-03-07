@@ -4,6 +4,12 @@ let list = document.querySelector("ul");
 let taskCounter = document.querySelector("#taskCounter");
 
 
+
+
+function welcome() {
+    alert('Welcome');
+};
+
 function run() {
     textInput = taskInput.value;
     taskInput.value = [];
@@ -39,3 +45,5 @@ function run() {
 };
 
 btn.addEventListener('click', run);
+
+addEventListener('load', (welcome));
