@@ -5,7 +5,7 @@ let list = document.querySelector("ul");
 
 function run() {
     textInput = taskInput.value;
-    taskInput.value = ' ';
+    taskInput.value = [];
     
     let listItem = document.createElement("li");
     let spanElement = document.createElement("span");
