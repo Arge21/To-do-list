@@ -1,6 +1,7 @@
 let btn = document.querySelector("#taskBtn");
 let taskInput = document.querySelector("#taskInput");
 let list = document.querySelector("ul");
+let taskCounter = document.querySelector("#taskCounter")
 
 
 function run() {
@@ -10,7 +11,7 @@ function run() {
     let listItem = document.createElement("li");
     let spanElement = document.createElement("span");
     let delBtn = document.createElement("button");
-
+    
 
     delBtn.style.marginLeft = '10px'
     listItem.appendChild(spanElement);
