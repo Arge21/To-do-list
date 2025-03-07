@@ -5,7 +5,7 @@ let taskCounter = document.querySelector("#taskCounter");
 let darkBtn = document.querySelector("#darkMode");
 let body = document.querySelector("body");
 let titleH2 = document.querySelector("h2");
-
+let labelCounter = document.querySelector("#label");
 
 darkBtn.style.cssText = ('float: right; margin-right: 10px;');
 
@@ -13,6 +13,7 @@ function darkMode() {
     body.classList.add("darkModeBody");
     titleH2.classList.add("darkModeText");
     taskCounter.classList.add("darkModeText");
+    labelCounter.classList.add("darkModeText");
 
     const listItems = document.querySelectorAll("li");
     listItems.forEach(item => {
