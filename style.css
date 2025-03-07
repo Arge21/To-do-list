@@ -1,0 +1,12 @@
+.darkModeText {
+    color: white;
+}
+
+.darkModeBody {
+    background-color: rgb(38, 37, 37);
+}
+
+
+li::marker {
+    color: white;
+}

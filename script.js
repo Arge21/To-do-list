@@ -7,7 +7,6 @@ let darkBtn = document.querySelector("#darkMode");
 darkBtn.style.cssText = ('float: right; margin-right: 10px;');
 
 
-
 function welcome() {
     alert('Welcome');
 };
