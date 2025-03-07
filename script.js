@@ -2,7 +2,7 @@ let btn = document.querySelector("#taskBtn");
 let taskInput = document.querySelector("#taskInput");
 let list = document.querySelector("ul");
 let taskCounter = document.querySelector("#taskCounter");
-
+let darkBtn = document.querySelector("#darkMode");
 
 
 
